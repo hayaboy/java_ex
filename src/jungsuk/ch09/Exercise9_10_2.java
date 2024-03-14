@@ -1,19 +1,15 @@
 package jungsuk.ch09;
 
-public class Exercise9_6 {
+public class Exercise9_10_2 {
 	
 	
 	public static String fillZero(String src, int length) {
 		
 		if(src == null || src.length()==length) {
 			return src;
-		}
-		
-		if(length<=0) {
+		}else if(length<=0) {
 			return "";
-		}
-		
-		if(src.length() > length ) {
+		}else if(src.length() > length ) {
 			return src.substring(0, length);
 		}
 		
@@ -35,8 +31,6 @@ public class Exercise9_6 {
 
 	public static void main(String[] args) {
 		String src = "12345";
-		
-		//System.out.println(src.toCharArray());
 		System.out.println(fillZero(src,10));
 		System.out.println(fillZero(src,-1));
 		System.out.println(fillZero(src,3));
