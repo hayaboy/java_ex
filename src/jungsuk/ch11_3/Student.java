@@ -1,6 +1,6 @@
-package jungsuk.ch11_2;
+package jungsuk.ch11_3;
 
-public class Student  implements Comparable{
+public class Student {
 	String name;
 	int ban;
 	int no;
@@ -30,15 +30,5 @@ public class Student  implements Comparable{
 	}
 
 	
-
-	@Override
-	public int compareTo(Object o) {
-		if (o instanceof Student) {
-			Student tmp = (Student) o;
-			return name.compareTo(tmp.name);
-		} else {
-			return -1;
-		}
-	}
 
 }
